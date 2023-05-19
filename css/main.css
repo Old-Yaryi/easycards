@@ -1,0 +1,105 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #1E1E1E;
+  font-weight: 500;
+}
+
+a {
+  color: #1E1E1E;
+  text-decoration: none;
+}
+
+.header-top {
+  padding: 22px 0;
+}
+
+.header-top__wrapper {
+  max-width: 1392px;
+  padding: 0 10px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header-top__logo {
+  width: 210px;
+  border-right: 1px solid rgba(168, 184, 197, 0.4);
+}
+
+.header-top__contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-top__phone {
+  position: relative;
+}
+
+.header-top__phone::after {
+  position: absolute;
+  content: url(../img/phone_left.svg);
+  top: 7px;
+  left: -30px;
+}
+
+.header-top__phone a {
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.header-top__phone p {
+  color: #A8B8C5;
+  line-height: 24px;
+  font-size: 12px;
+}
+
+.header-top__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 12px;
+          column-gap: 12px;
+}
+
+.header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.header-menu ul li {
+  padding: 10px;
+}
+
+.header-menu ul li a {
+  font-size: 16px;
+  line-height: 160%;
+}
+/*# sourceMappingURL=main.css.map */
