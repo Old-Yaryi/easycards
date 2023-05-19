@@ -7,6 +7,11 @@ a {
   color: #1E1E1E;
   text-decoration: none;
 }
+.container {
+  width: 1268px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 .button-select {
   background: #0089EE;
   border-radius: 4px;
@@ -81,7 +86,7 @@ a {
   }
   &-main {
     position: relative;
-    margin-bottom: 300px;
+    margin-bottom: 60px;
     &__wrapper {
       position: relative;
       margin: 0 auto;
@@ -151,5 +156,42 @@ a {
       bottom: 135px;
       right: 0;
     }
+  }
+  &-benefit {
+    margin-bottom: 200px;
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      column-gap: 20px;  
+    }
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+    }
+    &__inner {
+      & p {
+        width: 256px;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #A8B8C5;
+      }
+    }
+    &__title {
+      margin-bottom: 24px;
+      width: 256px;
+      & p {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 120%;
+        color: #1E1E1E;
+      }
+      & span {
+        color: #0089EE;
+      }
+    }
+
   }
 }

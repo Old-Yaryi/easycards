@@ -9,6 +9,12 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1268px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .button-select {
   background: #0089EE;
   border-radius: 4px;
@@ -121,7 +127,7 @@ a {
 
 .header-main {
   position: relative;
-  margin-bottom: 300px;
+  margin-bottom: 60px;
 }
 
 .header-main__wrapper {
@@ -202,5 +208,58 @@ a {
   position: absolute;
   bottom: 135px;
   right: 0;
+}
+
+.header-benefit {
+  margin-bottom: 200px;
+}
+
+.header-benefit__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.header-benefit__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.header-benefit__inner p {
+  width: 256px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #A8B8C5;
+}
+
+.header-benefit__title {
+  margin-bottom: 24px;
+  width: 256px;
+}
+
+.header-benefit__title p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1E1E1E;
+}
+
+.header-benefit__title span {
+  color: #0089EE;
 }
 /*# sourceMappingURL=main.css.map */
