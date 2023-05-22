@@ -498,8 +498,6 @@ h2 {
         line-height: 160%;
         height: 80px;
         padding: 37.5px 75px 0 40px;
-        & img {
-        }
         & img, span {
           margin-right: 8px;
         }
@@ -562,11 +560,70 @@ h2 {
 .banner-detailed {
   padding-top: 80px;
   position: relative;
+  margin-bottom: 100px;
   &__item {
     background: linear-gradient(93.31deg, #51B6FF 0%, #007FE4 100%);
     border-radius: 12px;
     display: flex;
     justify-content: space-between;
     padding: 60px;
+    color: #fff;
+  }
+  &__inner {
+    & h3 {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 110%;
+      margin-bottom: 24px;
+    }
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 40px;
+      max-width: 535px;
+    }
+  }
+  &__cta {
+    display: flex;
+    column-gap: 20px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 2px;
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 0;
+    }
+  }
+  &__img {
+    position: absolute;
+    right: 250px;
+    bottom: -3px;
+    & img {
+      width: 115%;
+    }
+  }
+  &__stars-1 {
+    position: absolute;
+    bottom: 25px;
+    left: 260px;
+  }
+  &__stars-2 {
+    position: absolute;
+    bottom: 260px;
+    left: 48%;
+  }
+  &__stars-3 {
+    position: absolute;
+    bottom: 20px;
+    right: 190px;
   }
 }
