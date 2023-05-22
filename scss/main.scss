@@ -6,6 +6,7 @@ body {
 a {
   color: #1E1E1E;
   text-decoration: none;
+  cursor: pointer;
 }
 h2 {
   font-weight: 600;
@@ -429,5 +430,77 @@ h2 {
       font-size: 44px;
       line-height: 110%;
     }
+  }
+}
+.compare {
+  padding: 60px 0 40px;
+  &__title {
+    & h2 {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 110%;
+      margin-bottom: 25px;
+    }
+    & p {
+      color: #A8B8C5;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      margin-bottom: 30px;
+    }
+  }
+  &__country {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__table {
+    text-align: center;
+    & th {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 160%;
+      color: #1E1E1E;
+      padding: 37.5px 0 37.5px 40px;
+    }
+    & tr {
+      & td {
+        color: #A8B8C5;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        height: 80px;
+        padding: 37.5px 75px 0 40px;
+        & img {
+        }
+        & img, span {
+          margin-right: 8px;
+        }
+        & p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 160%;
+        }
+        &:first-child {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 160%;
+          text-align: left;
+          color: #1E1E1E;
+        }
+      }
+      &:nth-child(even) {
+        background: #F4F7FF;
+      }
+    }
+  }
+  &__button {
+    padding: 21px 24px;
+    color: #A8B8C5;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    border: 1.5px solid rgba(168, 184, 197, 0.2);
+    border-radius: 4px;
   }
 }

@@ -7,6 +7,7 @@ body {
 a {
   color: #1E1E1E;
   text-decoration: none;
+  cursor: pointer;
 }
 
 h2 {
@@ -585,5 +586,89 @@ h2 {
   font-weight: 600;
   font-size: 44px;
   line-height: 110%;
+}
+
+.compare {
+  padding: 60px 0 40px;
+}
+
+.compare__title h2 {
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 110%;
+  margin-bottom: 25px;
+}
+
+.compare__title p {
+  color: #A8B8C5;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  margin-bottom: 30px;
+}
+
+.compare__country {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.compare__table {
+  text-align: center;
+}
+
+.compare__table th {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  color: #1E1E1E;
+  padding: 37.5px 0 37.5px 40px;
+}
+
+.compare__table tr td {
+  color: #A8B8C5;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  height: 80px;
+  padding: 37.5px 75px 0 40px;
+}
+
+.compare__table tr td img, .compare__table tr td span {
+  margin-right: 8px;
+}
+
+.compare__table tr td p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+}
+
+.compare__table tr td:first-child {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: left;
+  color: #1E1E1E;
+}
+
+.compare__table tr:nth-child(even) {
+  background: #F4F7FF;
+}
+
+.compare__button {
+  padding: 21px 24px;
+  color: #A8B8C5;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  border: 1.5px solid rgba(168, 184, 197, 0.2);
+  border-radius: 4px;
 }
 /*# sourceMappingURL=main.css.map */
