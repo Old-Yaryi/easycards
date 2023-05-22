@@ -590,6 +590,45 @@ h2 {
 
 .compare {
   padding: 60px 0 40px;
+  margin: 0 auto 40px;
+  border: 1px solid rgba(168, 184, 197, 0.2);
+  border-radius: 12px;
+  max-width: 1268px;
+}
+
+.compare__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 100px;
+          column-gap: 100px;
+}
+
+.compare__stars {
+  position: relative;
+  width: 50%;
+}
+
+.compare__stars img {
+  position: absolute;
+}
+
+.compare__stars .stars-1 {
+  top: -22px;
+}
+
+.compare__stars .stars-2 {
+  top: 0;
+  left: 50px;
+}
+
+.compare__stars .stars-3 {
+  right: 0;
+  bottom: 35px;
+}
+
+.compare__title {
+  padding: 0 40px;
 }
 
 .compare__title h2 {
@@ -670,5 +709,64 @@ h2 {
   line-height: 140%;
   border: 1.5px solid rgba(168, 184, 197, 0.2);
   border-radius: 4px;
+}
+
+.compare-warning {
+  background: linear-gradient(93.85deg, #F4F7FF 50.7%, rgba(244, 247, 255, 0) 75.59%);
+  border-radius: 4px;
+  max-width: 1168px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.compare-warning__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 16px;
+          column-gap: 16px;
+}
+
+.compare-warning__item p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #A8B8C5;
+  max-width: 950px;
+}
+
+.compare-warning__i {
+  border: 2px solid #A8B8C5;
+  color: #A8B8C5;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.banner-detailed {
+  padding-top: 80px;
+  position: relative;
+}
+
+.banner-detailed__item {
+  background: linear-gradient(93.31deg, #51B6FF 0%, #007FE4 100%);
+  border-radius: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 60px;
 }
 /*# sourceMappingURL=main.css.map */
