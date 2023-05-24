@@ -1112,6 +1112,7 @@ h2 {
   margin-bottom: 45px;
   height: 35px;
   position: relative;
+  cursor: pointer;
 }
 
 .faq-block__question::after {
@@ -1136,15 +1137,43 @@ h2 {
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
   cursor: pointer;
+  -webkit-transition: -webkit-transform .5s ease 0s;
+  transition: -webkit-transform .5s ease 0s;
+  transition: transform .5s ease 0s;
+  transition: transform .5s ease 0s, -webkit-transform .5s ease 0s;
 }
 
 .faq-block__responce {
-  display: none;
+  height: 0;
+  -webkit-transition: height 0.5s ease 0s;
+  transition: height 0.5s ease 0s;
 }
 
 .faq-block__responce p {
-  font-size: 16px;
+  font-size: 0;
   line-height: 160%;
   color: #A8B8C5;
+}
+
+.faq-block__request.active .faq-block__responce {
+  height: 120px;
+}
+
+.faq-block__request.active .faq-block__responce p {
+  font-size: 16px;
+}
+
+.faq-block__request.active .faq-block__question::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.banner-feedback {
+  margin-bottom: 100px;
+}
+
+.banner-feedback__inner {
+  background: linear-gradient(93.31deg, #51B6FF 0%, #007FE4 100%);
+  border-radius: 12px;
 }
 /*# sourceMappingURL=main.css.map */

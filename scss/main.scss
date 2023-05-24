@@ -836,6 +836,7 @@ h2 {
       margin-bottom: 45px;
       height: 35px;
       position: relative;
+      cursor: pointer;
       &::after {
         position: absolute;
         content: '';
@@ -856,15 +857,41 @@ h2 {
         right: 0;
         transform: rotate(-90deg);
         cursor: pointer;
+        transition: transform .5s ease 0s;
       }
     }
     &__responce {
-      display: none;
+      height: 0;
+      transition: height 0.5s ease 0s;
       & p {
-        font-size: 16px;
+        font-size: 0;
         line-height: 160%;
         color: #A8B8C5;
       }
     }
+    &__request.active {
+      & .faq-block__responce {
+        height: 120px;
+        & p {
+          font-size: 16px;
+        }
+      }
+      & .faq-block__question::before {
+        transform: rotate(0deg);
+      }
+    }
+    
   }
+}
+.banner-feedback {
+  margin-bottom: 100px;
+  &__inner {
+    background: linear-gradient(93.31deg, #51B6FF 0%, #007FE4 100%);
+    border-radius: 12px;
+  }
+
+
+
+
+ 
 }
