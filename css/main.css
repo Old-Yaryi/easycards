@@ -1378,6 +1378,9 @@ h2 {
 
 .blog-article__img img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 12px 12px 0 0;
 }
 
 .blog-article__main {
@@ -1517,6 +1520,7 @@ h2 {
           column-gap: 12px;
   padding: 24px 20.5px;
   background: #fff;
+  border-radius: 4px;
 }
 
 .requisites-download p {
@@ -1599,12 +1603,17 @@ h2 {
   color: #A8B8C5;
 }
 
-.requisites-telegram p {
+.requisites-telegram__text {
+  padding: 0 10px;
+}
+
+.requisites-telegram__text p {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   color: #A8B8C5;
   margin-bottom: 20px;
+  max-width: 340px;
 }
 
 .requisites-telegram__subscribe {
@@ -1615,6 +1624,7 @@ h2 {
   font-size: 16px;
   line-height: 140%;
   color: #fff;
+  border-radius: 4px;
 }
 
 .footer {

@@ -1040,6 +1040,8 @@ h2 {
     &__img {
       & img {
         width: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0 ;
       }
     }
     &__main {
@@ -1153,6 +1155,7 @@ h2 {
     column-gap: 12px;
     padding: 24px 20.5px;
     background: #fff;
+    border-radius: 4px;
     & p {
       font-weight: 600;
       font-size: 16px;
@@ -1215,12 +1218,16 @@ h2 {
         }
       }
     }
-    & p {
-      font-weight: 600;
-      font-size: 16px;
-      line-height: 140%;
-      color: #A8B8C5;
-      margin-bottom: 20px;
+    &__text {
+      padding: 0 10px;
+      & p {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 140%;
+        color: #A8B8C5;
+        margin-bottom: 20px;
+        max-width: 340px;
+      }
     }
     &__subscribe {
       display: inline-block;
@@ -1230,6 +1237,7 @@ h2 {
       font-size: 16px;
       line-height: 140%;
       color: #fff;
+      border-radius: 4px;
     }
   }
 }
