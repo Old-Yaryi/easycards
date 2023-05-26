@@ -885,12 +885,107 @@ h2 {
 }
 .banner-feedback {
   margin-bottom: 100px;
-  &__inner {
+  &__item {
     background: linear-gradient(93.31deg, #51B6FF 0%, #007FE4 100%);
     border-radius: 12px;
+    padding: 60px 60px 0 60px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
   }
+  &__inner {
+    position: relative;
+    & h2 {
+      font-weight: 600;
+      font-size: 44px;
+      line-height: 110%;
+      margin-bottom: 40px;
+    }
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      max-width: 640px;
+    }
+  }
+  &__cards {
+    position: relative;
+    height: 200px;
+    &--1, &--2, &--3 {
+      position: absolute;
+    }
+    &--1 {
+      bottom: -3px;
+      left: 30px;
+      z-index: 1;
+    }
+    &--2 {
+      bottom: -3px;
+      left: 269px;
+    }
+    &--3 {
+      right: 0;
+      bottom: 30px;
+    }
 
-
+    
+  }
+  &__stars--1 {
+    position: absolute;
+    top: 0;
+    right: 100px;
+  }
+  &__stars--2 {
+    position: absolute;
+    left: 30px;
+    bottom: 55px;
+  }
+  &__parametr {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    column-gap: 80px;
+  }
+  &__indicator{
+    max-width: 160px;
+    &-value {
+      font-size: 80px;
+      line-height: 160%;
+    }
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%
+    }
+  }
+  &__otzovik {
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    align-items: flex-end;
+    & p {
+      font-style: italic;
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 160%;
+      color: #BAE1FF;
+    }
+  }
+  &__link {
+    background-color: #fff;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    max-width: 297px;
+    & p{
+      font-style: normal;
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      color: #1E1E1E;
+    }
+  }
 
 
  
