@@ -188,23 +188,19 @@ h2 {
   position: absolute;
 }
 
-.header-main__wrapper.--kyrgyzstan {
+.header-main__wrapper.--country {
   border-radius: 12px;
-  background: url(../img/header-main__kyrgyzstan__bg.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
-.header-main__wrapper.--kyrgyzstan::before {
+.header-main__wrapper.--country::before {
   display: none;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__container {
+.header-main__wrapper.--country .header-main__container {
   padding: 124px 10px;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__title {
-  background: rgba(245, 199, 126, 0.3);
+.header-main__wrapper.--country .header-main__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,24 +209,33 @@ h2 {
   max-width: 120px;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__title p {
-  color: #fff;
-}
-
-.header-main__wrapper.--kyrgyzstan .header-main__description {
+.header-main__wrapper.--country .header-main__description {
   max-width: 720px;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__description h1 {
+.header-main__wrapper.--country.--kyrgyzstan {
+  background: url(../img/header-main__kyrgyzstan__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main__wrapper.--country.--kyrgyzstan .header-main__title {
+  background: rgba(245, 199, 126, 0.3);
+}
+
+.header-main__wrapper.--country.--kyrgyzstan .header-main__title p {
   color: #fff;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__description p {
-  max-width: 490px;
+.header-main__wrapper.--country.--kyrgyzstan .header-main__description h1 {
+  color: #fff;
+}
+
+.header-main__wrapper.--country.--kyrgyzstan .header-main__description p {
   color: #FFD188;
 }
 
-.header-main__wrapper.--kyrgyzstan .header-main__description .button-select {
+.header-main__wrapper.--country.--kyrgyzstan .header-main__description .button-select {
   background: #fff;
   color: #E37640;
 }
@@ -296,7 +301,7 @@ h2 {
   right: 0;
 }
 
-.header-main__right-img.--kyrgyzstan {
+.header-main__right-img.--country {
   display: none;
 }
 
@@ -905,6 +910,10 @@ h2 {
           justify-content: center;
 }
 
+.compare.--kyrgyzstan {
+  margin-bottom: 50px;
+}
+
 .banner-detailed {
   padding-top: 80px;
   position: relative;
@@ -997,6 +1006,18 @@ h2 {
   position: absolute;
   bottom: 20px;
   right: 190px;
+}
+
+.banner-detailed.--kyrgyzstan .banner-detailed__item {
+  background: linear-gradient(264.89deg, #7BD5EB 0%, #57A4D0 100%);
+}
+
+.banner-detailed.--kyrgyzstan .banner-detailed__inner p {
+  color: #BAE1FF;
+}
+
+.banner-detailed.--kyrgyzstan .banner-detailed__inner .banner-detailed__link {
+  color: #4497B3;
 }
 
 .scope {
@@ -1118,6 +1139,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+.steps-title.--kyrgyzstan {
+  background: rgba(255, 209, 136, 0.2);
+  color: #E37640;
+}
+
 .steps-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1175,6 +1201,18 @@ h2 {
   z-index: -1;
 }
 
+.steps-main.--kyrgyzstan {
+  background: linear-gradient(97.51deg, #F5A357 0%, #DB392F 100%);
+}
+
+.steps-main.--kyrgyzstan::after {
+  background-image: url(../img/steps-bg_orange.png);
+}
+
+.steps-main.--kyrgyzstan p {
+  color: #FFD188;
+}
+
 .steps-main__num {
   font-weight: 500;
   font-size: 80px;
@@ -1203,6 +1241,10 @@ h2 {
   right: 66px;
 }
 
+.steps-img.--kyrgyzstan {
+  display: none;
+}
+
 .faq {
   margin-bottom: 100px;
 }
@@ -1222,6 +1264,11 @@ h2 {
   font-size: 16px;
   line-height: 140%;
   margin-bottom: 40px;
+}
+
+.faq-top__title.--kyrgyzstan {
+  background: rgba(255, 209, 136, 0.2);
+  color: #E37640;
 }
 
 .faq-top h2 {
@@ -1484,6 +1531,11 @@ h2 {
   margin-bottom: 40px;
 }
 
+.blog-top__title.--kyrgyzstan {
+  background: rgba(255, 209, 136, 0.2);
+  color: #E37640;
+}
+
 .blog-top h2 {
   font-weight: 600;
   font-size: 44px;
@@ -1583,6 +1635,10 @@ h2 {
   border-radius: 4px;
 }
 
+.blog-dzen__link.--kyrgyzstan {
+  background: #E37640;
+}
+
 .requisites {
   margin-bottom: 60px;
 }
@@ -1615,6 +1671,26 @@ h2 {
   font-size: 44px;
   line-height: 110%;
   margin-bottom: 80px;
+}
+
+.requisites-wrapper.--kyrgyzstan {
+  background: linear-gradient(97.51deg, #F5A357 0%, #DB392F 100%);
+}
+
+.requisites-wrapper.--kyrgyzstan::after {
+  background-image: url(../img/steps-bg_orange.png);
+}
+
+.requisites-wrapper.--kyrgyzstan .requisites-title {
+  color: #FFD188;
+}
+
+.requisites-wrapper.--kyrgyzstan .requisites-download p {
+  color: #E37640;
+}
+
+.requisites-wrapper.--kyrgyzstan .requisites-phone p {
+  color: #FFD188;
 }
 
 .requisites-item {

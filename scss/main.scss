@@ -136,11 +136,8 @@ h2 {
         right: -70%;
         position: absolute;
       }
-      &.--kyrgyzstan {
-        border-radius: 12px;
-        background: url(../img/header-main__kyrgyzstan__bg.png);
-        background-repeat: no-repeat;
-        background-size: cover;
+      &.--country {
+        border-radius: 12px;   
         &::before {
           display: none;
         }
@@ -148,27 +145,35 @@ h2 {
           padding: 124px 10px;
         }
         & .header-main__title {
-          background: rgba(245, 199, 126, 0.3);
           display: flex;
           column-gap: 8px;
           max-width: 120px;
-          & p {
-            color: #fff;
-          }
         }
         & .header-main__description {
           max-width: 720px;
-           & h1 {
-             color: #fff
-           }
-           & p {
-            max-width: 490px;
-            color: #FFD188;
-           }
-           & .button-select {
-              background: #fff;
-              color: #E37640;
-           }
+        }
+        &.--kyrgyzstan {
+          background: url(../img/header-main__kyrgyzstan__bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          & .header-main__title {
+            background: rgba(245, 199, 126, 0.3);
+            & p {
+              color: #fff;
+            }
+          }
+          & .header-main__description {
+             & h1 {
+               color: #fff
+             }
+             & p {
+              color: #FFD188;
+             }
+             & .button-select {
+                background: #fff;
+                color: #E37640;
+             }
+          }
         }
       }
     }
@@ -223,7 +228,7 @@ h2 {
       position: absolute;
       bottom: 135px;
       right: 0;
-      &.--kyrgyzstan {
+      &.--country {
         display: none;
       }
     }
@@ -673,6 +678,9 @@ h2 {
     }
     
   }
+  &.--kyrgyzstan {
+    margin-bottom: 50px;
+  }
 }
 .banner-detailed {
   padding-top: 80px;
@@ -742,6 +750,19 @@ h2 {
     position: absolute;
     bottom: 20px;
     right: 190px;
+  }
+  &.--kyrgyzstan {
+    & .banner-detailed__item {
+      background: linear-gradient(264.89deg, #7BD5EB 0%, #57A4D0 100%);
+    }
+    & .banner-detailed__inner {
+      & p {
+        color: #BAE1FF;
+      }
+      & .banner-detailed__link {
+        color: #4497B3;
+      }
+    }
   }
 }
 .scope {
@@ -833,6 +854,10 @@ h2 {
     line-height: 140%;
     color: #0089EE;
     margin-bottom: 40px;
+    &.--kyrgyzstan {
+      background: rgba(255, 209, 136, 0.2);
+      color: #E37640;
+    }
   }
   &-top {
     display: flex;
@@ -880,6 +905,15 @@ h2 {
       left: 0;
       z-index: -1;
     }
+    &.--kyrgyzstan {
+      background: linear-gradient(97.51deg, #F5A357 0%, #DB392F 100%);
+      &::after {
+        background-image: url(../img/steps-bg_orange.png);
+      }
+      & p {
+        color: #FFD188;
+      }
+    }
     &__num {
       font-weight: 500;
       font-size: 80px;
@@ -903,6 +937,9 @@ h2 {
     position: absolute;
     bottom: -105px;
     right: 66px;
+    &.--kyrgyzstan {
+      display: none;
+    }
   }
 }
 .faq {
@@ -920,6 +957,10 @@ h2 {
       font-size: 16px;
       line-height: 140%;
       margin-bottom: 40px;
+      &.--kyrgyzstan {
+        background: rgba(255, 209, 136, 0.2);
+        color: #E37640;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1120,6 +1161,10 @@ h2 {
       color: #0089EE;
       border-radius: 4px;
       margin-bottom: 40px;
+      &.--kyrgyzstan {
+        background: rgba(255, 209, 136, 0.2);
+        color: #E37640;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1202,6 +1247,9 @@ h2 {
       color: #fff;
       background: #0089EE;
       border-radius: 4px;
+      &.--kyrgyzstan{
+        background: #E37640;
+      }
     }
   } 
 }
@@ -1232,6 +1280,25 @@ h2 {
       font-size: 44px;
       line-height: 110%;
       margin-bottom: 80px;
+    }
+    &.--kyrgyzstan {
+      background: linear-gradient(97.51deg, #F5A357 0%, #DB392F 100%);
+      &::after {
+        background-image: url(../img/steps-bg_orange.png);
+      }
+      & .requisites-title {
+        color: #FFD188;
+      }
+      & .requisites-download {
+        & p {
+          color: #E37640;
+        }
+      }
+      & .requisites-phone {
+        & p {
+          color: #FFD188;
+        }
+      }
     }
   }
   &-item {
