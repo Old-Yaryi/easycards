@@ -58,6 +58,14 @@ h2 {
   color: #0089EE;
 }
 
+.title__accent.--kyrgyzstan {
+  background: rgba(255, 209, 136, 0.2);
+}
+
+.title__accent.--kyrgyzstan p {
+  color: #E37640;
+}
+
 .header {
   overflow: hidden;
 }
@@ -180,6 +188,53 @@ h2 {
   position: absolute;
 }
 
+.header-main__wrapper.--kyrgyzstan {
+  border-radius: 12px;
+  background: url(../img/header-main__kyrgyzstan__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main__wrapper.--kyrgyzstan::before {
+  display: none;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__container {
+  padding: 124px 10px;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__title {
+  background: rgba(245, 199, 126, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  max-width: 120px;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__title p {
+  color: #fff;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__description {
+  max-width: 720px;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__description h1 {
+  color: #fff;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__description p {
+  max-width: 490px;
+  color: #FFD188;
+}
+
+.header-main__wrapper.--kyrgyzstan .header-main__description .button-select {
+  background: #fff;
+  color: #E37640;
+}
+
 .header-main__container {
   padding: 135px 10px;
   max-width: 1268px;
@@ -188,7 +243,7 @@ h2 {
 }
 
 .header-main__title {
-  width: 495px;
+  display: inline-block;
   background: rgba(0, 137, 238, 0.1);
   border-radius: 4px;
   padding: 12px 16px;
@@ -203,7 +258,7 @@ h2 {
 }
 
 .header-main__description {
-  width: 526px;
+  max-width: 526px;
 }
 
 .header-main__description h1 {
@@ -214,7 +269,7 @@ h2 {
 }
 
 .header-main__description p {
-  width: 560px;
+  max-width: 560px;
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
@@ -239,6 +294,10 @@ h2 {
   position: absolute;
   bottom: 135px;
   right: 0;
+}
+
+.header-main__right-img.--kyrgyzstan {
+  display: none;
 }
 
 .header-benefit {
@@ -294,6 +353,10 @@ h2 {
   color: #0089EE;
 }
 
+.header-benefit__title.--kyrgyzstan span {
+  color: #E37640;
+}
+
 .price__title {
   text-align: center;
   margin-bottom: 80px;
@@ -312,6 +375,88 @@ h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+}
+
+.price-wrapper.--kyrgyzstan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+          column-gap: 20px;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__item {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__inner p {
+  letter-spacing: 0.5px;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__img {
+  text-align: center;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__banner {
+  display: none;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__benefit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__benefit ul {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__benefit ul li {
+  margin-bottom: 32px;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__benefit ul li::before {
+  display: none;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__benefit ul li::after {
+  content: url(../img/checked_orange.svg);
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__price {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__price-value {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+  margin-bottom: 32px;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__price .button-detaled {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.price-wrapper.--kyrgyzstan .price-cards__cta .button-select {
+  background: #E37640;
 }
 
 .price-cards {
@@ -406,7 +551,7 @@ h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
-  width: 178px;
+  max-width: 178px;
   margin-left: 28px;
   position: relative;
 }
@@ -685,8 +830,8 @@ h2 {
 
 .compare__table tr td p {
   font-weight: 500;
-  font-size: 16px;
-  line-height: 160%;
+  font-size: 20px;
+  line-height: 120%;
 }
 
 .compare__table tr td:first-child {
@@ -699,6 +844,13 @@ h2 {
 
 .compare__table tr:nth-child(even) {
   background: #F4F7FF;
+}
+
+.compare__table.--kyrgyzstan tbody tr td p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 120%;
+  color: #E37640;
 }
 
 .compare__button {

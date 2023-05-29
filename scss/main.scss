@@ -49,6 +49,12 @@ h2 {
     line-height: 140%;
     color: #0089EE;
   }
+  &.--kyrgyzstan {
+    background: rgba(255, 209, 136, 0.2);
+    & p {
+      color: #E37640;
+    }
+  }
 }
 .header {
   overflow: hidden;
@@ -130,6 +136,41 @@ h2 {
         right: -70%;
         position: absolute;
       }
+      &.--kyrgyzstan {
+        border-radius: 12px;
+        background: url(../img/header-main__kyrgyzstan__bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        &::before {
+          display: none;
+        }
+        & .header-main__container {
+          padding: 124px 10px;
+        }
+        & .header-main__title {
+          background: rgba(245, 199, 126, 0.3);
+          display: flex;
+          column-gap: 8px;
+          max-width: 120px;
+          & p {
+            color: #fff;
+          }
+        }
+        & .header-main__description {
+          max-width: 720px;
+           & h1 {
+             color: #fff
+           }
+           & p {
+            max-width: 490px;
+            color: #FFD188;
+           }
+           & .button-select {
+              background: #fff;
+              color: #E37640;
+           }
+        }
+      }
     }
     &__container {
       padding: 135px 10px;
@@ -138,7 +179,7 @@ h2 {
       position: relative;
     }
     &__title {
-      width: 495px;
+      display: inline-block;
       background: rgba(0, 137, 238, 0.1);
       border-radius: 4px;
       padding: 12px 16px;
@@ -151,7 +192,7 @@ h2 {
       }
     }
     &__description {
-      width: 526px;
+      max-width: 526px;
       & h1 {
         font-weight: 600;
         font-size: 44px;
@@ -159,7 +200,7 @@ h2 {
         margin-bottom: 40px;
       }
       & p {
-        width: 560px;
+        max-width: 560px;
         font-weight: 600;
         font-size: 16px;
         line-height: 140%;
@@ -182,6 +223,9 @@ h2 {
       position: absolute;
       bottom: 135px;
       right: 0;
+      &.--kyrgyzstan {
+        display: none;
+      }
     }
   }
   &-benefit {
@@ -218,6 +262,11 @@ h2 {
       & span {
         color: #0089EE;
       }
+      &.--kyrgyzstan {
+        & span {
+          color: #E37640;
+        }
+      }
     }
 
   }
@@ -237,6 +286,60 @@ h2 {
       font-weight: 600;
       font-size: 16px;
       line-height: 140%;
+    }
+  }
+  &-wrapper {
+    &.--kyrgyzstan {
+      display: flex;
+      column-gap: 20px;
+      & .price-cards {
+        &__item {
+          flex-direction: column;
+        }
+        &__inner {
+          & p {
+            letter-spacing: 0.5px;
+          }
+        }
+        &__img {
+          text-align: center;
+        }
+        &__banner {
+          display: none;
+        }
+        &__benefit {
+          display: flex;
+          justify-content: space-between;
+          & ul {
+            flex-direction: column;
+            & li {
+              margin-bottom: 32px;
+              &::before {
+                display: none;
+              }
+              &::after {
+                content: url(../img/checked_orange.svg);
+              }
+            }
+          }
+        }
+        &__price {
+          flex-direction: column;
+          align-items: flex-end;
+          &-value {
+            order: 0;
+            margin-bottom: 32px;
+          }
+          & .button-detaled {
+            order: 1;
+          }
+        }
+        &__cta {
+          & .button-select {
+            background: #E37640;
+          }
+        }
+      }
     }
   }
   &-cards {
@@ -299,7 +402,7 @@ h2 {
           font-weight: 600;
           font-size: 16px;
           line-height: 140%;
-          width: 178px;
+          max-width: 178px;
           margin-left: 28px;
           position: relative;
           & span {
@@ -503,8 +606,8 @@ h2 {
         }
         & p {
           font-weight: 500;
-          font-size: 16px;
-          line-height: 160%;
+          font-size: 20px;
+          line-height: 120%;
         }
         &:first-child {
           font-weight: 500;
@@ -516,6 +619,20 @@ h2 {
       }
       &:nth-child(even) {
         background: #F4F7FF;
+      }
+    }
+    &.--kyrgyzstan {
+      & tbody {
+        & tr {
+          & td {
+            & p {
+              font-weight: 500;
+              font-size: 20px;
+              line-height: 120%;
+              color: #E37640;
+            }
+          }
+        }
       }
     }
   }
