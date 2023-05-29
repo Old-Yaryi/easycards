@@ -27,6 +27,9 @@ h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+  &.--kyrgyzstan {
+    background: #E37640;
+  }
 }
 .button-detaled {
   border-radius: 4px;
@@ -294,7 +297,7 @@ h2 {
     }
   }
   &-wrapper {
-    &.--kyrgyzstan {
+    &.--country {
       display: flex;
       column-gap: 20px;
       & .price-cards {
@@ -337,11 +340,6 @@ h2 {
           }
           & .button-detaled {
             order: 1;
-          }
-        }
-        &__cta {
-          & .button-select {
-            background: #E37640;
           }
         }
       }
@@ -454,6 +452,9 @@ h2 {
         font-size: 44px;
         line-height: 110%;
         color: #0089EE;
+        &.--kyrgyzstan {
+          color: #E37640;
+        }
       }
     }
   }
@@ -678,7 +679,7 @@ h2 {
     }
     
   }
-  &.--kyrgyzstan {
+  &.--country {
     margin-bottom: 50px;
   }
 }
@@ -751,7 +752,7 @@ h2 {
     bottom: 20px;
     right: 190px;
   }
-  &.--kyrgyzstan {
+  &.--kazahstan {
     & .banner-detailed__item {
       background: linear-gradient(264.89deg, #7BD5EB 0%, #57A4D0 100%);
     }
@@ -794,6 +795,10 @@ h2 {
     color: #0089EE;
     margin-bottom: 40px;
     display: inline-block;
+    &.--kyrgyzstan {
+      background: rgba(255, 209, 136, 0.2);
+      color: #E37640;
+    }
   }
   &-grid {
     display: grid;
@@ -937,7 +942,7 @@ h2 {
     position: absolute;
     bottom: -105px;
     right: 66px;
-    &.--kyrgyzstan {
+    &.--country {
       display: none;
     }
   }
