@@ -30,6 +30,9 @@ h2 {
   &.--kyrgyzstan {
     background: #E37640;
   }
+  &.--kazahstan {
+    background: #4497B3;
+  }
 }
 .button-detaled {
   border-radius: 4px;
@@ -57,6 +60,10 @@ h2 {
     & p {
       color: #E37640;
     }
+  }
+  &.--kazahstan {
+    background: rgba(164, 216, 238, 0.2);
+    color: #4497B3;
   }
 }
 .header {
@@ -178,6 +185,33 @@ h2 {
              }
           }
         }
+        &.--kazahstan {
+          background: url(../img/header-main__kazahstan__bg.png);
+          background-repeat: no-repeat;
+          background-size: cover;
+          & .header-main__title {
+            color: #fff;
+            background: rgba(186, 225, 255, 0.2);
+          }
+          & .header-main__description {
+            max-width: 675px;
+            & h1 {
+              color: #fff;
+            }
+            & p {
+              color: #BAE1FF;
+            }
+            & .button-select {
+              background: #fff;
+              color: #4497B3;
+            }
+          }
+          & .header-main__img {
+            height: 95%;
+            top: 80px;
+            right: -65px;
+          }  
+        }
       }
     }
     &__container {
@@ -275,6 +309,11 @@ h2 {
           color: #E37640;
         }
       }
+      &.--kazahstan {
+        & span {
+          color: #4497B3;
+        }
+      }
     }
 
   }
@@ -325,9 +364,6 @@ h2 {
               &::before {
                 display: none;
               }
-              &::after {
-                content: url(../img/checked_orange.svg);
-              }
             }
           }
         }
@@ -343,6 +379,17 @@ h2 {
           }
         }
       }
+      &.--kyrgyzstan {
+        & .price-cards__benefit {
+          & ul {
+            & li {
+              &::after {
+                content: url(../img/checked_orange.svg);
+              }
+            }
+          }
+        }
+      }
     }
   }
   &-cards {
@@ -354,6 +401,13 @@ h2 {
       display: flex;
       justify-content: space-between;
       column-gap: 40px;
+      &.--kazahstan {
+        margin-bottom: 75px;
+        & .price-cards__inner p {
+          margin-bottom: 85px;
+        }
+      }
+      
     }
     &__inner {
       & p {
@@ -362,6 +416,7 @@ h2 {
         line-height: 140%;
         color: #A8B8C5;
         margin-bottom: 40px;
+        max-width: 535px;
       }
     }
     &__banner {
@@ -454,6 +509,9 @@ h2 {
         color: #0089EE;
         &.--kyrgyzstan {
           color: #E37640;
+        }
+        &.--kazahstan {
+          color: #4497B3;
         }
       }
     }

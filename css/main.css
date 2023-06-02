@@ -37,6 +37,10 @@ h2 {
   background: #E37640;
 }
 
+.button-select.--kazahstan {
+  background: #4497B3;
+}
+
 .button-detaled {
   border-radius: 4px;
   display: inline-block;
@@ -68,6 +72,11 @@ h2 {
 
 .title__accent.--kyrgyzstan p {
   color: #E37640;
+}
+
+.title__accent.--kazahstan {
+  background: rgba(164, 216, 238, 0.2);
+  color: #4497B3;
 }
 
 .header {
@@ -244,6 +253,40 @@ h2 {
   color: #E37640;
 }
 
+.header-main__wrapper.--country.--kazahstan {
+  background: url(../img/header-main__kazahstan__bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__title {
+  color: #fff;
+  background: rgba(186, 225, 255, 0.2);
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__description {
+  max-width: 675px;
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__description h1 {
+  color: #fff;
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__description p {
+  color: #BAE1FF;
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__description .button-select {
+  background: #fff;
+  color: #4497B3;
+}
+
+.header-main__wrapper.--country.--kazahstan .header-main__img {
+  height: 95%;
+  top: 80px;
+  right: -65px;
+}
+
 .header-main__container {
   padding: 135px 10px;
   max-width: 1268px;
@@ -366,6 +409,10 @@ h2 {
   color: #E37640;
 }
 
+.header-benefit__title.--kazahstan span {
+  color: #4497B3;
+}
+
 .price__title {
   text-align: center;
   margin-bottom: 80px;
@@ -437,10 +484,6 @@ h2 {
   display: none;
 }
 
-.price-wrapper.--country .price-cards__benefit ul li::after {
-  content: url(../img/checked_orange.svg);
-}
-
 .price-wrapper.--country .price-cards__price {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -464,6 +507,10 @@ h2 {
           order: 1;
 }
 
+.price-wrapper.--country.--kyrgyzstan .price-cards__benefit ul li::after {
+  content: url(../img/checked_orange.svg);
+}
+
 .price-cards {
   padding: 40px;
   background: #F4F7FF;
@@ -482,12 +529,21 @@ h2 {
           column-gap: 40px;
 }
 
+.price-cards__item.--kazahstan {
+  margin-bottom: 75px;
+}
+
+.price-cards__item.--kazahstan .price-cards__inner p {
+  margin-bottom: 85px;
+}
+
 .price-cards__inner p {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   color: #A8B8C5;
   margin-bottom: 40px;
+  max-width: 535px;
 }
 
 .price-cards__banner {
@@ -627,6 +683,10 @@ h2 {
 
 .price-cards__price-value.--kyrgyzstan {
   color: #E37640;
+}
+
+.price-cards__price-value.--kazahstan {
+  color: #4497B3;
 }
 
 .price-inn {
