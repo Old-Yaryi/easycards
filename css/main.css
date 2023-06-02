@@ -1084,6 +1084,18 @@ h2 {
   color: #4497B3;
 }
 
+.banner-detailed.--kyrgyzstan .banner-detailed__item {
+  background: linear-gradient(97.51deg, #F5A357 0%, #DB392F 100%);
+}
+
+.banner-detailed.--kyrgyzstan .banner-detailed__inner p {
+  color: #FFD188;
+}
+
+.banner-detailed.--kyrgyzstan .banner-detailed__inner .banner-detailed__link {
+  color: #4497B3;
+}
+
 .scope {
   background: #F4F7FF;
   padding: 100px 0;
