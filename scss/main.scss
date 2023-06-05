@@ -870,6 +870,10 @@ h2 {
       background: rgba(255, 209, 136, 0.2);
       color: #E37640;
     }
+    &.--kazahstan {
+      background: rgba(164, 216, 238, 0.2);
+      color: #4497B3;
+    }
   }
   &-grid {
     display: grid;
@@ -934,6 +938,10 @@ h2 {
       background: rgba(255, 209, 136, 0.2);
       color: #E37640;
     }
+    &.--kazahstan {
+      background: rgba(164, 216, 238, 0.2);
+      color: #4497B3;
+    }
   }
   &-top {
     display: flex;
@@ -990,6 +998,12 @@ h2 {
         color: #FFD188;
       }
     }
+    &.--kazahstan {
+      background: linear-gradient(264.89deg, #7BD5EB 0%, #57A4D0 100%);
+      &::after {
+        background-image: url(../img/steps-bg_blue.png);
+      }
+    }
     &__num {
       font-weight: 500;
       font-size: 80px;
@@ -1037,6 +1051,10 @@ h2 {
         background: rgba(255, 209, 136, 0.2);
         color: #E37640;
       }
+      &.--kazahstan {
+        background: rgba(164, 216, 238, 0.2);
+        color: #4497B3;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1055,6 +1073,26 @@ h2 {
     display: flex;
     justify-content: space-between;
     column-gap: 20px;
+    &.--kyrgyzstan {
+      &  .faq-inner .faq-block__question {
+        &::after {
+          background-color: #E37640;
+        }
+        &::before {
+          background-color: #E37640;
+        }
+      }
+    }
+    &.--kazahstan {
+      & .faq-inner .faq-block__question {
+        &::after {
+          background-color: #4497B3;
+        }
+        &::before {
+          background-color: #4497B3;
+        }
+      }
+    }
   }
   &-inner {
     width: 50%;
@@ -1241,6 +1279,10 @@ h2 {
         background: rgba(255, 209, 136, 0.2);
         color: #E37640;
       }
+      &.--kazahstan {
+        background: rgba(164, 216, 238, 0.2);
+        color: #4497B3;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1326,6 +1368,9 @@ h2 {
       &.--kyrgyzstan{
         background: #E37640;
       }
+      &.--kazahstan {
+        background: #4497B3;
+      }
     }
   } 
 }
@@ -1373,6 +1418,25 @@ h2 {
       & .requisites-phone {
         & p {
           color: #FFD188;
+        }
+      }
+    }
+    &.--kazahstan {
+      background: linear-gradient(94deg, #8FB9D0 0%, #719BB2 100%);
+      &::after {
+        background-image: url(../img/steps-bg_blue.png);
+      }
+      & .requisites-title {
+        color: #C6E5F7;
+      }
+      & .requisites-download {
+        & p {
+          color: #76A0B7;
+        }
+      }
+      & .requisites-phone {
+        & p {
+          color: #C6E5F7;
         }
       }
     }

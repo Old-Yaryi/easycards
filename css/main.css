@@ -1093,7 +1093,7 @@ h2 {
 }
 
 .banner-detailed.--kyrgyzstan .banner-detailed__inner .banner-detailed__link {
-  color: #4497B3;
+  color: #E37640;
 }
 
 .scope {
@@ -1135,6 +1135,11 @@ h2 {
 .scope-title.--kyrgyzstan {
   background: rgba(255, 209, 136, 0.2);
   color: #E37640;
+}
+
+.scope-title.--kazahstan {
+  background: rgba(164, 216, 238, 0.2);
+  color: #4497B3;
 }
 
 .scope-grid {
@@ -1225,6 +1230,11 @@ h2 {
   color: #E37640;
 }
 
+.steps-title.--kazahstan {
+  background: rgba(164, 216, 238, 0.2);
+  color: #4497B3;
+}
+
 .steps-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1294,6 +1304,14 @@ h2 {
   color: #FFD188;
 }
 
+.steps-main.--kazahstan {
+  background: linear-gradient(264.89deg, #7BD5EB 0%, #57A4D0 100%);
+}
+
+.steps-main.--kazahstan::after {
+  background-image: url(../img/steps-bg_blue.png);
+}
+
 .steps-main__num {
   font-weight: 500;
   font-size: 80px;
@@ -1352,6 +1370,11 @@ h2 {
   color: #E37640;
 }
 
+.faq-top__title.--kazahstan {
+  background: rgba(164, 216, 238, 0.2);
+  color: #4497B3;
+}
+
 .faq-top h2 {
   font-weight: 600;
   font-size: 44px;
@@ -1375,6 +1398,22 @@ h2 {
           justify-content: space-between;
   -webkit-column-gap: 20px;
           column-gap: 20px;
+}
+
+.faq-item.--kyrgyzstan .faq-inner .faq-block__question::after {
+  background-color: #E37640;
+}
+
+.faq-item.--kyrgyzstan .faq-inner .faq-block__question::before {
+  background-color: #E37640;
+}
+
+.faq-item.--kazahstan .faq-inner .faq-block__question::after {
+  background-color: #4497B3;
+}
+
+.faq-item.--kazahstan .faq-inner .faq-block__question::before {
+  background-color: #4497B3;
 }
 
 .faq-inner {
@@ -1617,6 +1656,11 @@ h2 {
   color: #E37640;
 }
 
+.blog-top__title.--kazahstan {
+  background: rgba(164, 216, 238, 0.2);
+  color: #4497B3;
+}
+
 .blog-top h2 {
   font-weight: 600;
   font-size: 44px;
@@ -1720,6 +1764,10 @@ h2 {
   background: #E37640;
 }
 
+.blog-dzen__link.--kazahstan {
+  background: #4497B3;
+}
+
 .requisites {
   margin-bottom: 60px;
 }
@@ -1772,6 +1820,26 @@ h2 {
 
 .requisites-wrapper.--kyrgyzstan .requisites-phone p {
   color: #FFD188;
+}
+
+.requisites-wrapper.--kazahstan {
+  background: linear-gradient(94deg, #8FB9D0 0%, #719BB2 100%);
+}
+
+.requisites-wrapper.--kazahstan::after {
+  background-image: url(../img/steps-bg_blue.png);
+}
+
+.requisites-wrapper.--kazahstan .requisites-title {
+  color: #C6E5F7;
+}
+
+.requisites-wrapper.--kazahstan .requisites-download p {
+  color: #76A0B7;
+}
+
+.requisites-wrapper.--kazahstan .requisites-phone p {
+  color: #C6E5F7;
 }
 
 .requisites-item {
