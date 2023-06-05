@@ -213,6 +213,33 @@ h2 {
           }  
         }
       }
+      &.--baikal {
+        &::before {
+          content: url(../img/header-main__baikal_after.png);
+          top: 0;
+          right: 0;
+          width: auto;
+          height: auto;
+        }
+        & .header-main__container {
+          & .header-main__title {
+            display: flex;
+            column-gap: 8px;
+            max-width: 120px;
+          }
+          
+        }
+        & .header-main__img {
+          top: 140px;
+          right: 128px;
+          & img {
+            height: auto;
+          }
+        } 
+        & .button-select {
+          background: #1E4165;
+        }
+      }
     }
     &__container {
       padding: 135px 10px;
@@ -266,6 +293,9 @@ h2 {
       bottom: 135px;
       right: 0;
       &.--country {
+        display: none;
+      }
+      &.--baikal {
         display: none;
       }
     }
@@ -942,6 +972,10 @@ h2 {
       background: rgba(164, 216, 238, 0.2);
       color: #4497B3;
     }
+    &.--baikal {
+      background: rgba(153, 192, 220, 0.2);
+      color: #1E4165;
+    }
   }
   &-top {
     display: flex;
@@ -1004,6 +1038,12 @@ h2 {
         background-image: url(../img/steps-bg_blue.png);
       }
     }
+    &.--baikal {
+      background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+      &::after {
+        background-image: url(../img/steps-bg_baikal.png);
+      }
+    }
     &__num {
       font-weight: 500;
       font-size: 80px;
@@ -1028,6 +1068,9 @@ h2 {
     bottom: -105px;
     right: 66px;
     &.--country {
+      display: none;
+    }
+    &.hide {
       display: none;
     }
   }

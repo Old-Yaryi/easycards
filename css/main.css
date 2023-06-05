@@ -287,6 +287,36 @@ h2 {
   right: -65px;
 }
 
+.header-main__wrapper.--baikal::before {
+  content: url(../img/header-main__baikal_after.png);
+  top: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+}
+
+.header-main__wrapper.--baikal .header-main__container .header-main__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 8px;
+          column-gap: 8px;
+  max-width: 120px;
+}
+
+.header-main__wrapper.--baikal .header-main__img {
+  top: 140px;
+  right: 128px;
+}
+
+.header-main__wrapper.--baikal .header-main__img img {
+  height: auto;
+}
+
+.header-main__wrapper.--baikal .button-select {
+  background: #1E4165;
+}
+
 .header-main__container {
   padding: 135px 10px;
   max-width: 1268px;
@@ -349,6 +379,10 @@ h2 {
 }
 
 .header-main__right-img.--country {
+  display: none;
+}
+
+.header-main__right-img.--baikal {
   display: none;
 }
 
@@ -1235,6 +1269,11 @@ h2 {
   color: #4497B3;
 }
 
+.steps-title.--baikal {
+  background: rgba(153, 192, 220, 0.2);
+  color: #1E4165;
+}
+
 .steps-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1312,6 +1351,14 @@ h2 {
   background-image: url(../img/steps-bg_blue.png);
 }
 
+.steps-main.--baikal {
+  background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+}
+
+.steps-main.--baikal::after {
+  background-image: url(../img/steps-bg_baikal.png);
+}
+
 .steps-main__num {
   font-weight: 500;
   font-size: 80px;
@@ -1341,6 +1388,10 @@ h2 {
 }
 
 .steps-img.--country {
+  display: none;
+}
+
+.steps-img.hide {
   display: none;
 }
 
