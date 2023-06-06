@@ -213,13 +213,35 @@ h2 {
           }  
         }
       }
-      &.--baikal {
+      &.--bank {
         &::before {
-          content: url(../img/header-main__baikal_after.png);
           top: 0;
           right: 0;
-          width: auto;
-          height: auto;
+          width: 34%;
+          height: 100%;
+          background: none;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        &.--baikal {
+          &::before {
+            background-image: url(../img/header-main__baikal_after.png);
+          }
+          & .button-select {
+            background: #1E4165;
+          }
+        }
+        &.--freedom {
+          &::before {
+            background-image: url(../img/header-main__freedom_after.png);
+          }
+          & .button-select {
+            background: #298B3F;
+          }
+          & .header-main__img {
+            top: 190px;
+            right: 235px;
+          }
         }
         & .header-main__container {
           & .header-main__title {
@@ -227,19 +249,19 @@ h2 {
             column-gap: 8px;
             max-width: 120px;
           }
-          
         }
         & .header-main__img {
-          top: 140px;
-          right: 128px;
+          top: 150px;
+          right: 165px;
           & img {
             height: auto;
           }
         } 
-        & .button-select {
-          background: #1E4165;
+        & .header-main__container {
+          padding: 87px 10px;
         }
       }
+      
     }
     &__container {
       padding: 135px 10px;
@@ -344,8 +366,17 @@ h2 {
           color: #4497B3;
         }
       }
+      &.--bakai {
+        & span {
+          color: #1E4165;
+        }
+      }
+      &.--freedom {
+        & span {
+          color: #298B3F;
+        }
+      }
     }
-
   }
 }
 .price {
@@ -692,6 +723,11 @@ h2 {
         }
       }
     }
+    &.--freedom {
+      & tr td p {
+        color: #298B3F;
+      }
+    }
   }
   &-cta {
     padding: 0 40px;
@@ -711,6 +747,7 @@ h2 {
         color: #A8B8C5;
         max-width: 830px;
       }
+      
     }
     &__link {
       padding: 10px 0;
@@ -725,7 +762,11 @@ h2 {
         line-height: 120%;
         cursor: pointer;
       }
-      
+      &.--freedom {
+        & a {
+          background: #298B3F;
+        }
+      }
     }
   }
 }
@@ -747,6 +788,12 @@ h2 {
         font-size: 16px;
         line-height: 140%;
         color: #1E4165;
+      }
+      &.--freedom {
+        background: rgba(164, 238, 202, 0.2);
+        & p {
+          color: #298B3F;
+        }
       }
     }
     & h2 {
@@ -1219,6 +1266,10 @@ h2 {
       background: rgba(153, 192, 220, 0.2);
       color: #1E4165;
     }
+    &.--freedom {
+      background: rgba(164, 238, 202, 0.2);
+      color: #298B3F;
+    }
   }
   &-top {
     display: flex;
@@ -1285,6 +1336,18 @@ h2 {
       background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
       &::after {
         background-image: url(../img/steps-bg_baikal.png);
+      }
+      & p {
+        color: #7BA5BC;
+      }
+    }
+    &.--freedom {
+      background: linear-gradient(148.13deg, #32A64D 0%, #297538 100%);
+      &::after {
+        background-image: url(../img/steps-bg_freedom.png);
+      }
+      & p {
+        color: #A0D8A7;
       }
     }
     &__num {

@@ -287,15 +287,38 @@ h2 {
   right: -65px;
 }
 
-.header-main__wrapper.--baikal::before {
-  content: url(../img/header-main__baikal_after.png);
+.header-main__wrapper.--bank::before {
   top: 0;
   right: 0;
-  width: auto;
-  height: auto;
+  width: 34%;
+  height: 100%;
+  background: none;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.header-main__wrapper.--baikal .header-main__container .header-main__title {
+.header-main__wrapper.--bank.--baikal::before {
+  background-image: url(../img/header-main__baikal_after.png);
+}
+
+.header-main__wrapper.--bank.--baikal .button-select {
+  background: #1E4165;
+}
+
+.header-main__wrapper.--bank.--freedom::before {
+  background-image: url(../img/header-main__freedom_after.png);
+}
+
+.header-main__wrapper.--bank.--freedom .button-select {
+  background: #298B3F;
+}
+
+.header-main__wrapper.--bank.--freedom .header-main__img {
+  top: 190px;
+  right: 235px;
+}
+
+.header-main__wrapper.--bank .header-main__container .header-main__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -304,17 +327,17 @@ h2 {
   max-width: 120px;
 }
 
-.header-main__wrapper.--baikal .header-main__img {
-  top: 140px;
-  right: 128px;
+.header-main__wrapper.--bank .header-main__img {
+  top: 150px;
+  right: 165px;
 }
 
-.header-main__wrapper.--baikal .header-main__img img {
+.header-main__wrapper.--bank .header-main__img img {
   height: auto;
 }
 
-.header-main__wrapper.--baikal .button-select {
-  background: #1E4165;
+.header-main__wrapper.--bank .header-main__container {
+  padding: 87px 10px;
 }
 
 .header-main__container {
@@ -445,6 +468,14 @@ h2 {
 
 .header-benefit__title.--kazahstan span {
   color: #4497B3;
+}
+
+.header-benefit__title.--bakai span {
+  color: #1E4165;
+}
+
+.header-benefit__title.--freedom span {
+  color: #298B3F;
 }
 
 .price__title {
@@ -922,6 +953,10 @@ h2 {
   color: #1E4165;
 }
 
+.rate-table.--freedom tr td p {
+  color: #298B3F;
+}
+
 .rate-cta {
   padding: 0 40px;
 }
@@ -964,6 +999,10 @@ h2 {
   cursor: pointer;
 }
 
+.rate-cta__link.--freedom a {
+  background: #298B3F;
+}
+
 .refill {
   background: #F4F7FF;
   padding: 100px 0;
@@ -988,6 +1027,14 @@ h2 {
   font-size: 16px;
   line-height: 140%;
   color: #1E4165;
+}
+
+.refill-top__title.--freedom {
+  background: rgba(164, 238, 202, 0.2);
+}
+
+.refill-top__title.--freedom p {
+  color: #298B3F;
 }
 
 .refill-top h2 {
@@ -1568,6 +1615,11 @@ h2 {
   color: #1E4165;
 }
 
+.steps-title.--freedom {
+  background: rgba(164, 238, 202, 0.2);
+  color: #298B3F;
+}
+
 .steps-top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1651,6 +1703,22 @@ h2 {
 
 .steps-main.--baikal::after {
   background-image: url(../img/steps-bg_baikal.png);
+}
+
+.steps-main.--baikal p {
+  color: #7BA5BC;
+}
+
+.steps-main.--freedom {
+  background: linear-gradient(148.13deg, #32A64D 0%, #297538 100%);
+}
+
+.steps-main.--freedom::after {
+  background-image: url(../img/steps-bg_freedom.png);
+}
+
+.steps-main.--freedom p {
+  color: #A0D8A7;
 }
 
 .steps-main__num {
