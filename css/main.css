@@ -967,6 +967,7 @@ h2 {
 .refill {
   background: #F4F7FF;
   padding: 100px 0;
+  margin-bottom: 120px;
 }
 
 .refill-top {
@@ -1017,6 +1018,7 @@ h2 {
   padding: 32px;
   border: 1.5px solid rgba(168, 184, 197, 0.2);
   border-radius: 12px;
+  width: 300px;
 }
 
 .refill-inner__img {
@@ -1334,6 +1336,94 @@ h2 {
   color: #E37640;
 }
 
+.banner-bank {
+  margin-bottom: 200px;
+}
+
+.banner-bank__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 60px;
+  position: relative;
+}
+
+.banner-bank__inner {
+  position: relative;
+  width: 50%;
+}
+
+.banner-bank__logo {
+  margin-bottom: 40px;
+}
+
+.banner-bank__decripton {
+  max-width: 580px;
+  margin-bottom: 40px;
+}
+
+.banner-bank__decripton p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.banner-bank__link a {
+  display: inline-block;
+  padding: 20px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  background: #fff;
+  cursor: pointer;
+}
+
+.banner-bank__img {
+  position: absolute;
+  bottom: -63px;
+  width: 100%;
+}
+
+.banner-bank .stars-1 {
+  position: absolute;
+  bottom: -35px;
+  left: 55px;
+}
+
+.banner-bank .stars-2 {
+  margin-left: -50px;
+}
+
+.banner-bank .stars-3 {
+  position: absolute;
+  bottom: 30px;
+  right: 0;
+}
+
+.banner-bank.bakai .banner-bank__item {
+  background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.banner-bank.bakai .banner-bank__item::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: '';
+  background-image: url(../img/steps-bg_baikal.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.banner-bank.bakai .banner-bank__decripton p {
+  color: #7BA5BC;
+}
+
 .scope {
   background: #F4F7FF;
   padding: 100px 0;
@@ -1630,6 +1720,10 @@ h2 {
   color: #4497B3;
 }
 
+.faq-top__title.--bakai {
+  color: #1E4165;
+}
+
 .faq-top h2 {
   font-weight: 600;
   font-size: 44px;
@@ -1669,6 +1763,14 @@ h2 {
 
 .faq-item.--kazahstan .faq-inner .faq-block__question::before {
   background-color: #4497B3;
+}
+
+.faq-item.--bakai .faq-inner .faq-block__question::after {
+  background-color: #1E4165;
+}
+
+.faq-item.--bakai .faq-inner .faq-block__question::before {
+  background-color: #1E4165;
 }
 
 .faq-inner {
@@ -2023,6 +2125,10 @@ h2 {
   background: #4497B3;
 }
 
+.blog-dzen__link.--bakai {
+  background: #1E4165;
+}
+
 .requisites {
   margin-bottom: 60px;
 }
@@ -2095,6 +2201,26 @@ h2 {
 
 .requisites-wrapper.--kazahstan .requisites-phone p {
   color: #C6E5F7;
+}
+
+.requisites-wrapper.--bakai {
+  background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
+}
+
+.requisites-wrapper.--bakai::after {
+  background-image: url(../img/steps-bg_baikal.png);
+}
+
+.requisites-wrapper.--bakai .requisites-title {
+  color: #7BA5BC;
+}
+
+.requisites-wrapper.--bakai .requisites-download p {
+  color: #1E4165;
+}
+
+.requisites-wrapper.--bakai .requisites-phone p {
+  color: #7BA5BC;
 }
 
 .requisites-item {
