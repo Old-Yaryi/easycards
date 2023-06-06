@@ -214,6 +214,7 @@ h2 {
         }
       }
       &.--bank {
+        border-radius: 12px;
         &::before {
           top: 0;
           right: 0;
@@ -222,6 +223,7 @@ h2 {
           background: none;
           background-repeat: no-repeat;
           background-size: cover;
+          border-radius: 0 12px 12px 0;
         }
         &.--baikal {
           &::before {
@@ -260,8 +262,7 @@ h2 {
         & .header-main__container {
           padding: 87px 10px;
         }
-      }
-      
+      }  
     }
     &__container {
       padding: 135px 10px;
@@ -1083,6 +1084,20 @@ h2 {
     display: flex;
     padding: 60px;
     position: relative;
+    border-radius: 12px;
+    z-index: 0;
+    &::before {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      content: '';
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
   }
   &__inner {
     position: relative;
@@ -1133,29 +1148,28 @@ h2 {
   &.bakai {
     & .banner-bank__item {
       background: linear-gradient(148.13deg, #325579 0%, #073768 100%);
-      border-radius: 12px;
-      z-index: 0;
       &::before {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        content: '';
         background-image: url(../img/steps-bg_baikal.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        top: 0;
-        left: 0;
-        z-index: -1;
-      }
-    }
-    & .banner-bank__decripton p {
-      color: #7BA5BC;
-    }
-
-    
+      } 
+      & .banner-bank__decripton p {
+        color: #7BA5BC;
+      } 
+    } 
   }
-
+  &.--freedom {
+    & .banner-bank__item {
+      background: linear-gradient(148.13deg, #32A64D 0%, #297538 100%);
+      &::before {
+        background-image: url(../img/steps-bg_freedom.png);
+      }
+    } 
+    & .banner-bank__decripton p {
+      color: #A0D8A7;
+    }
+    & .banner-bank__link a {
+      color: #298B3F;
+    } 
+  }
 }
 .scope {
   background: #F4F7FF;
@@ -1407,6 +1421,10 @@ h2 {
       &.--bakai {
         color: #1E4165;
       }
+      &.--freedom {
+        background: rgba(164, 238, 202, 0.2);
+        color: #298B3F;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1452,6 +1470,16 @@ h2 {
         }
         &::before {
           background-color: #1E4165;
+        }
+      }
+    }
+    &.--freedom {
+      &  .faq-inner .faq-block__question {
+        &::after {
+          background-color: #298B3F;
+        }
+        &::before {
+          background-color: #298B3F;
         }
       }
     }
@@ -1645,6 +1673,10 @@ h2 {
         background: rgba(164, 216, 238, 0.2);
         color: #4497B3;
       }
+      &.--freedom {
+        background: rgba(164, 238, 202, 0.2);
+        color: #298B3F;
+      }
     }
     & h2 {
       font-weight: 600;
@@ -1668,7 +1700,6 @@ h2 {
       bottom: 130px;
       right: 260px;
     }
-    
   }
   &-articles {
     display: flex;
@@ -1735,6 +1766,9 @@ h2 {
       }
       &.--bakai {
         background: #1E4165;
+      }
+      &.--freedom {
+        background: #298B3F;
       }
     }
   } 
@@ -1821,6 +1855,25 @@ h2 {
       & .requisites-phone {
         & p {
           color: #7BA5BC;
+        }
+      }
+    }
+    &.--freedom {
+      background: linear-gradient(148.13deg, #32A64D 0%, #297538 100%);
+      &::after {
+        background-image: url(../img/steps-bg_freedom.png);
+      }
+      & .requisites-title {
+        color: #A0D8A7;
+      }
+      & .requisites-download {
+        & p {
+          color: #298B3F;
+        }
+      }
+      & .requisites-phone {
+        & p {
+          color: #A0D8A7;
         }
       }
     }
