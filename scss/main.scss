@@ -1,12 +1,20 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: 'Montserrat', sans-serif;
   color: #1E1E1E;
   font-weight: 500;
+  position: relative;
 }
 a {
   color: #1E1E1E;
   text-decoration: none;
   cursor: pointer;
+  &.disabled {
+    pointer-events: none;
+    cursor: none;
+  }
 }
 h2 {
   font-weight: 600;
@@ -27,6 +35,7 @@ h2 {
   font-weight: 600;
   font-size: 16px;
   line-height: 140%;
+  cursor: pointer;
   &.--kyrgyzstan {
     background: #E37640;
   }
@@ -651,7 +660,10 @@ h2 {
       column-gap: 20px;
       & .button-detaled {
         border: 1.5px solid rgba(255, 255, 255, 0.2);
-        color: #fff;
+        cursor: pointer;
+        & a {
+          color: #fff;
+        }
       }
     }
     &__value {
@@ -2025,5 +2037,99 @@ h2 {
         color: #1E1E1E;
       }
     }
+  }
+}
+.popup {
+  position: fixed;
+  top: -200vh;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(33, 30, 30, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  transition: top 0.5s ease ;
+  &.active {
+    top: 0;
+  }
+  &-item {
+    margin: 0 auto;
+    padding: 40px;
+    background: linear-gradient(100.25deg, #F4F7FF 0%, #EBEFF9 100%);
+    border-radius: 12px;
+  } 
+  &-inner {
+    border: 1.5px solid rgba(168, 184, 197, 0.2);
+    border-radius: 12px;
+    padding: 20px;
+    position: relative;
+    &__close {
+      position: absolute;
+      font-size: 20px;
+      right: -20px;
+      top: -20px;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      text-align: center;
+    }
+  }
+  &-title {
+    display: inline-block;
+    background: rgba(0, 137, 238, 0.1);
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-bottom: 40px;
+    & h2 {
+      color: #0089EE;
+    }
+  }
+  &-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      border: 1.5px solid rgba(168, 184, 197, 0.2);
+      border-radius: 12px;
+      padding: 10px;
+      & input {
+        height: 30px;
+        border: 1.5px solid rgba(168, 184, 197, 0.5);
+        border-radius: 12px;
+        &:focus {
+          border: 2px solid rgba(168, 184, 197, 0.9);
+          border-radius: 12px;
+          outline: none;
+        }
+      }
+    }
+  }
+  &-text {
+    text-align: center;
+    max-width: 390px;
+    & p {
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 140%;
+      color: #A8B8C5;
+    }
+  }
+  &-button {
+    background: #0089EE;
+    border-radius: 4px;
+    display: inline-block;
+    padding: 20.5px 24px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    cursor: pointer;
+    border: none;
   }
 }

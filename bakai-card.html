@@ -17,18 +17,18 @@
   <header class="header">
     <div class="header-top">
       <div class="header-top__wrapper">
-        <a href="#" class="header-top__logo">
+        <a href="./index.html" class="header-top__logo">
           <img src="./img/logo.svg" alt="logo">
         </a>
         <div class="header-top__menu">
           <nav class="header-menu">
             <ul>
-              <li><a class="hader-minu__link" href="#">Шаги открытия</a></li>
-              <li><a class="hader-minu__link" href="#">Тариф</a></li>
-              <li><a class="hader-minu__link" href="#">Пополнение</a></li>
-              <li><a class="hader-minu__link" href="#">О банке</a></li>
-              <li><a class="hader-minu__link" href="#">FAQ</a></li>
-              <li><a class="hader-minu__link" href="#">Отзывы</a></li>
+              <li><a class="hader-minu__link" href="#steps">Шаги открытия</a></li>
+              <li><a class="hader-minu__link" href="#rate">Тариф</a></li>
+              <li><a class="hader-minu__link" href="#refill">Пополнение</a></li>
+              <li><a class="hader-minu__link" href="#bank">О банке</a></li>
+              <li><a class="hader-minu__link" href="#faq">FAQ</a></li>
+              <li><a class="hader-minu__link" href="#feedback">Отзывы</a></li>
             </ul>
           </nav>
         </div>
@@ -58,7 +58,7 @@
           <div class="header-main__description">
             <h1>Оформление карты от банка Bakai Bank</h1>
             <p>Карта от банка Bakai Bank — один из лидирующих продуктов, позволяющий насладиться впечатляющей финансовой свободой. Предоставляет владельцу мгновенный доступ к собственным средствам в любое время и в любой точке мира.</p>
-            <a class="button-select" href="#">Оформить сейчас</a>
+            <div class="button-select bank" >Оформить сейчас</div>
           </div>
         </div>
         <div class="header-main__img">
@@ -109,7 +109,7 @@
       </div>
     </div>
   </header>
-  <section class="steps ">
+  <section class="steps" id="steps">
     <div class="container">
       <div class="steps-title --baikal">Шаги открытия</div>
       <div class="steps-top">
@@ -157,7 +157,7 @@
       </div>
     </div>
   </section>
-  <section class="rate">
+  <section class="rate" id="rate">
     <div class="rate__top">
       <div class="rate__title">
         <h2>Основной тариф</h2>
@@ -231,7 +231,7 @@
       </div>
     </div>
   </section>
-  <section class="refill">
+  <section class="refill" id="refill">
     <div class="container">
       <div class="refill-top">
         <div class="refill-top__title">
@@ -288,7 +288,7 @@
       </div>
     </div>
   </section>
-  <section class="banner-bank bakai">
+  <section class="banner-bank bakai" id="bank">
     <div class="container">
       <div class="banner-bank__item">
         <div class="banner-bank__inner">
@@ -315,7 +315,7 @@
       </div>
     </div>
   </section>
-  <section class="faq ">
+  <section class="faq" id="faq">
     <div class="container">
       <div class="faq-top">
         <div class="faq-top__title --bakai">FAQ</div>
@@ -402,7 +402,7 @@
       </div>
     </div>
   </section>
-  <section class="banner-feedback">
+  <section class="banner-feedback" id="feedback">
     <div class="container">
       <div class="banner-feedback__item">
         <div class="banner-feedback__inner">
@@ -507,7 +507,7 @@
       </div>
     </div>
   </section>
-  <section class="requisites ">
+  <section class="requisites">
     <div class="container">
       <div class="requisites-wrapper --bakai">
         <h3>Реквизиты</h3>
@@ -580,7 +580,7 @@
   <footer class="footer">
     <div class="container">     
       <div class="footer-logo">
-        <img src="./img/logo.svg" alt="logo">
+        <a href="./index.html"><img src="./img/logo.svg" alt="logo"></a>
       </div>
       <div class="footer-item">
         <div class="footer-inner">
@@ -592,6 +592,30 @@
       </div>
     </div>
   </footer>
+  <section class="popup">
+    <div class="popup-item">
+      <div class="popup-inner">
+        <div class="popup-inner__close">X</div>
+        <div class="popup-title">
+          <h2>Оставьте заявку</h2>
+        </div>
+        <form class="popup-form" action="#">
+          <div class="popup-form__item">
+            <p>Ваше имя</p>
+            <input type="text" name="user" value="">
+          </div>
+          <div class="popup-form__item">
+            <p>Ваш телефон</p>
+            <input type="tel" name="phone" value="">
+          </div>
+          <button class="popup-button" type="submit">Отправить</button>
+          <div class="popup-text">
+            <p>После отправки наш менеджер свяжется с Вами в ближайшее время, для обсуждения всех подробностей и дальнейших шагов.</p> 
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <script src="./js/main.js"></script>
 </body>
 </html>

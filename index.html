@@ -17,18 +17,18 @@
   <header class="header">
     <div class="header-top">
       <div class="header-top__wrapper">
-        <a href="#" class="header-top__logo">
+        <a href="./index.html" class="header-top__logo">
           <img src="./img/logo.svg" alt="logo">
         </a>
         <div class="header-top__menu">
           <nav class="header-menu">
             <ul>
-              <li><a class="hader-minu__link" href="#">Карты</a></li>
-              <li><a class="hader-minu__link" href="#">Сравнение карт</a></li>
-              <li><a class="hader-minu__link" href="#">Возможности</a></li>
-              <li><a class="hader-minu__link" href="#">Шаги открытия</a></li>
-              <li><a class="hader-minu__link" href="#">FAQ</a></li>
-              <li><a class="hader-minu__link" href="#">Отзывы</a></li>
+              <li><a class="hader-minu__link" href="#price">Карты</a></li>
+              <li><a class="hader-minu__link" href="#compare">Сравнение карт</a></li>
+              <li><a class="hader-minu__link" href="#scope">Возможности</a></li>
+              <li><a class="hader-minu__link" href="#steps">Шаги открытия</a></li>
+              <li><a class="hader-minu__link" href="#faq">FAQ</a></li>
+              <li><a class="hader-minu__link" href="#feedback">Отзывы</a></li>
             </ul>
           </nav>
         </div>
@@ -57,7 +57,7 @@
           <div class="header-main__description">
             <h1>Помогаем оформлять иностранные банковские карты гражданам России</h1>
             <p>Наша команда поможет Вам удаленно оформить международную карту в евро и долларах для операций в валюте. От Вас потребуется минимум документов!</p>
-            <a class="button-select" href="#">Выбрать карту</a>
+            <a class="button-select" href="#price">Выбрать карту</a>
           </div>
         </div>
         <div class="header-main__img">
@@ -108,7 +108,7 @@
       </div>
     </div>
   </header>
-  <section class="price">
+  <section class="price" id="price">
     <div class="container">
       <div class="price-wrapper">
         <div class="price__title">
@@ -146,12 +146,11 @@
                 </ul>
               </div>
             </div>
-
           </div>
           <div class="price-cards__footer">
             <div class="price-cards__cta">
-              <a class="button-select" href="#" >Оформить сейчас</a>
-              <a class="button-detaled" href="#" >Подробнее</a>
+              <div class="button-select bank" href="#" >Оформить сейчас</div>
+              <a class="button-detaled" href="./bakai-card.html" >Подробнее</a>
             </div>
             <div class="price-cards__price">
               <a class="button-detaled" href="#" >Тарифы</a>
@@ -191,7 +190,7 @@
           <div class="price-cards__footer">
             <div class="price-cards__cta">
               <a class="button-select" href="#" >Оформить сейчас</a>
-              <a class="button-detaled" href="#" >Подробнее</a>
+              <a class="button-detaled disabled">Подробнее</a>
             </div>
             <div class="price-cards__price">
               <a class="button-detaled" href="#" >Тарифы</a>
@@ -230,8 +229,8 @@
           </div>
           <div class="price-cards__footer">
             <div class="price-cards__cta">
-              <a class="button-select" href="#" >Оформить сейчас</a>
-              <a class="button-detaled" href="#" >Подробнее</a>
+              <a class="button-select" href="#">Оформить сейчас</a>
+              <a class="button-detaled" href="./freedom-card.html" >Подробнее</a>
             </div>
             <div class="price-cards__price">
               <a class="button-detaled" href="#" >Тарифы</a>
@@ -269,7 +268,8 @@
             <div class="price-inn__price">
               <div class="price-inn__cta">
                 <div class="button-select">Оформить сейчас</div>
-                <div class="button-detaled">Подробнее</div>
+                <div class="button-detaled">
+                  <a href="">Подробнее</a></div>
               </div>
               <div class="price-inn__value">6 500 <span>₽</span></div>
             </div>
@@ -278,7 +278,7 @@
       </div>
     </div>
   </section>
-  <section class="compare">
+  <section class="compare" id="compare">
       <div class="compare__top">
         <div class="compare__title">
           <h2>Сравнение карт</h2>
@@ -370,9 +370,9 @@
         </tr>
         <tr>
           <td></td>
-          <td><a class="compare__button" href="#">Тарифы</a></td>
-          <td><a class="compare__button" href="#">Тарифы</a></td>
-          <td><a class="compare__button" href="#">Тарифы</a></td>
+          <td><a class="compare__button" href="./bakai-card.html">Тарифы</a></td>
+          <td><a class="compare__button" href="./freedom-card.html">Тарифы</a></td>
+          <td><a class="compare__button disabled" href="#">Тарифы</a></td>
         </tr>
       </table>
       <div class="compare-warning">
@@ -389,12 +389,11 @@
           <h3>Подробнее о картах</h3>
           <p>Ознакомьтесь с преимуществами карт каждой из стран, перед тем, как сделать свой выбор. </p>
           <div class="banner-detailed__cta">
-            <a href="#" class="banner-detailed__link" ><img src="./img/flag_kazakhstan.png" alt="flag_kazakhstan"><p>Карты Казахстана</p></a>
-            <a href="kyrgyzstan-cards.html" class="banner-detailed__link" ><img src="./img/flag_kyrgyzstan.png" alt="flag_kyrgyzstan"><p>Карты Киргизии</p></a>
+            <a href="./kazahstan-cards.html" class="banner-detailed__link" ><img src="./img/flag_kazakhstan.png" alt="flag_kazakhstan"><p>Карты Казахстана</p></a>
+            <a href="./kyrgyzstan-cards.html" class="banner-detailed__link" ><img src="./img/flag_kyrgyzstan.png" alt="flag_kyrgyzstan"><p>Карты Киргизии</p></a>
           </div>
           <img class="banner-detailed__stars-1" src="./img/stars_1_white.png" alt="stars">
           <img class="banner-detailed__stars-2" src="./img/stars_2_white.png" alt="stars">
-          
         </div>
         <div class="banner-detailed__inner">
           <div class="banner-detailed__img">
@@ -405,7 +404,7 @@
       </div>
     </div>
   </section>
-  <section class="scope">
+  <section class="scope" id="scope">
     <div class="container">
       <div class="scope-top">
         <div class="scope-title">Возможности</div>
@@ -452,7 +451,7 @@
       </div>
     </div>
   </section>
-  <section class="steps">
+  <section class="steps" id="steps">
     <div class="container">
       <div class="steps-title">Шаги открытия</div>
       <div class="steps-top">
@@ -495,7 +494,7 @@
       </div>
     </div>
   </section>
-  <section class="faq">
+  <section class="faq" id="faq">
     <div class="container">
       <div class="faq-top">
         <div class="faq-top__title">FAQ</div>
@@ -582,7 +581,7 @@
       </div>
     </div>
   </section>
-  <section class="banner-feedback">
+  <section class="banner-feedback" id="feedback">
     <div class="container">
       <div class="banner-feedback__item">
         <div class="banner-feedback__inner">
@@ -763,7 +762,7 @@
   <footer class="footer">
     <div class="container">     
       <div class="footer-logo">
-        <img src="./img/logo.svg" alt="logo">
+        <a href=""><img src="./img/logo.svg" alt="logo"></a>
       </div>
       <div class="footer-item">
         <div class="footer-inner">
@@ -775,6 +774,30 @@
       </div>
     </div>
   </footer>
+  <section class="popup">
+    <div class="popup-item">
+      <div class="popup-inner">
+        <div class="popup-inner__close">X</div>
+        <div class="popup-title">
+          <h2>Оставьте заявку</h2>
+        </div>
+        <form class="popup-form" action="#">
+          <div class="popup-form__item">
+            <p>Ваше имя</p>
+            <input type="text" name="user" value="">
+          </div>
+          <div class="popup-form__item">
+            <p>Ваш телефон</p>
+            <input type="tel" name="phone" value="">
+          </div>
+          <button class="popup-button" type="submit">Отправить</button>
+          <div class="popup-text">
+            <p>После отправки наш менеджер свяжется с Вами в ближайшее время, для обсуждения всех подробностей и дальнейших шагов.</p> 
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
   <script src="./js/main.js"></script>
 </body>
 </html>
