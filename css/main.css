@@ -1435,6 +1435,10 @@ h2 {
   width: 50%;
 }
 
+.banner-bank__inner h2 {
+  display: none;
+}
+
 .banner-bank__logo {
   margin-bottom: 40px;
 }

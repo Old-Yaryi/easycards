@@ -1114,6 +1114,9 @@ h2 {
   &__inner {
     position: relative;
     width: 50%;
+    & h2 {
+      display: none;
+    }
   }
   &__logo {
     margin-bottom: 40px;
